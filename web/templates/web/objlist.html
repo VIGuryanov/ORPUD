@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <p>List of objects:</p>
+        <ul>
+            {% for object in objects %} 
+                <li>
+                    Data: {{ object.Data }} ID : {{object.id}}
+                    <a href="object/{{object.id}}/"> Navigate</a>
+                    <a href="object/delete/{{object.id}}"> Delete</a>
+                    <a href="object/modify/{{object.id}}"> Modify</a>
+                </li> 
+            {% endfor %} 
+        </ul>
+        <a href="object/create">Create new object</a>
+        <a href="/">Main page</a>
+    </body>
+</html>

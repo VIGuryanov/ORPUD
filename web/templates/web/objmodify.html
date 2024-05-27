@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <p>Modify object:</p>
+        <form action="" method="post">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button type="submit">Modify</button>
+        </form>
+        <a href="/object">Objects list</a>
+    </body>
+</html>
